@@ -1,0 +1,110 @@
+board:
+  buy_url_cn: N/A
+  buy_url_global: N/A
+  debug_interface: SWD
+  debugger: J-Link
+  description_en: The EK-RA6M3 MCU evaluation board, developed based on Renesas RA6M3
+    MCU, can help users easily evaluate the characteristics of RA6M3 MCU group through
+    flexible configuration software package and IDE, and develop embedded system applications.
+  description_zh: 基于瑞萨 RA6M3 MCU 开发的 EK-RA6M3 MCU 评估板，通过灵活配置软件包和 IDE，可帮助用户对 RA6M3
+     MCU 群组的特性轻松进行评估，并对嵌入系统应用程序进行开发。
+  emulator_machine: ''
+  large_image: documents/images/ek-ra6m3g.png
+  name: RA6M3-EK
+  price_cn: N/A CNY
+  price_global: N/A USD
+  sale_contact_cn: N/A
+  sale_contact_global: N/A
+  small_image: documents/images/ek-ra6m3g.png
+  vendor: Renesas
+  version: 1.0.0
+chip:
+  chip_name: R7FA6M3AH
+  clock_source: HSE
+  device_vendor: RENESAS
+  family_name: RA
+  rx_name: PA10
+  series_name: RA6
+  source_freq: '8000000'
+  sub_series_name: RA6M3
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/RA6M3_Group_Datasheet.pdf
+  title: RA6M3_datasheet
+- category: other
+  file: documents/RA6M3_Group_User's_Manual_Hardware.pdf
+  title: RA6M3_Group_User's_Manual_Hardware
+example_projects: []
+features:
+- R7FA6M3AH, 120MHz, Arm Cortex®-M4, 2MB flash, 640KB SRAM
+- J-Link
+- PMOD*2
+- UART
+- LCD
+features_zh:
+- R7FA6M3AH, 120MHz, Arm Cortex®-M4, 2MB flash, 640KB SRAM
+- J-Link
+- PMOD*2
+- UART
+- LCD
+pkg_type: Board_Support_Packages
+pkg_vendor: RT-Thread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .ignore_format.yml
+    - .project
+    - .settings
+    - board
+    - buildinfo.gpdsc
+    - configuration.xml
+    - docs
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.uvoptx
+    - project.uvprojx
+    - R7FA6M3AH3CFC.pincfg
+    - ra
+    - ra_cfg
+    - ra_gen
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - script
+    - src
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: ra6m3-ek
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
