@@ -71,7 +71,7 @@
 #  define LV_BIG_ENDIAN_SYSTEM 0
 #endif
 
-#define LV_ATTRIBUTE_MEM_ALIGN rt_align(4)
+#define LV_ATTRIBUTE_MEM_ALIGN ALIGN(4)
 
 /*==================
 * EXAMPLES
