@@ -249,11 +249,8 @@ static rt_size_t ra_uart_transmit(struct rt_serial_device     *serial,
                                   rt_size_t             size,
                                   rt_uint32_t           tx_flag)
 {
-    struct ra_uart *uart;
-
     RT_ASSERT(serial != RT_NULL);
     RT_ASSERT(buf != RT_NULL);
-    uart = rt_container_of(serial, struct ra_uart, serial);
 
     ra_uart_control(serial, RT_DEVICE_CTRL_SET_INT, (void *)tx_flag);
 
